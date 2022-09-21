@@ -35,5 +35,5 @@ parts:
       - default-jre-headless
 ```
 
-Replace `my-snap` with your app name.
+Replace `my-snap` with your app name.  
 Also, yes, the `plugin:` field is `kotlin-native` and not `kotlin_native`, despite the file name.
