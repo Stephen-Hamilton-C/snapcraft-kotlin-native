@@ -8,6 +8,11 @@ So, enter this simple plugin. It simply runs `./gradlew linkReleaseExecutableNat
 copies the resulting artifact into the part's install directory,
 and removes the unnecessary `.kexe` extension from the output.
 
+## Usage
+1. Ensure you have a `snap` directory in your project root and a `snapcraft.yaml` inside that.
+2. Create a `plugins` directory inside the `snap` directory.
+3. Place `kotlin_native.py` into this `plugins` directory.
+
 Here is a sample snapcraft.yaml that uses this plugin:
 
 ```yml
@@ -31,3 +36,4 @@ parts:
 ```
 
 Replace `my-snap` with your app name.
+Also, yes, the `plugin:` field is `kotlin-native` and not `kotlin_native`, despite the file name.
